@@ -5,6 +5,6 @@ run: build
 test:
 	@go test -v ./...
 dep:
-	@go mod vendor
-	@go mod tidy
-	@go mod verify
+	go mod vendor
+	go mod tidy
+	go mod verify
